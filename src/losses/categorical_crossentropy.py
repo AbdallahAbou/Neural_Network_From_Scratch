@@ -1,6 +1,5 @@
 import numpy as np
-import loss.py
-from loss.py import Loss
+from src.losses.loss import Loss
 
 class Loss_CategoricalCrossentropy(Loss):
     def forward(self, y_pred, y_true):

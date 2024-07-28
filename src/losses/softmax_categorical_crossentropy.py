@@ -1,6 +1,7 @@
 import numpy as np
-import loss.py
-from loss.py import Loss
+from src.losses.loss import Loss
+from src.activations.softmax import Activation_Softmax
+from src.losses.categorical_crossentropy import Loss_CategoricalCrossentropy
 
 class Activation_Softmax_Loss_CategoricalCrossentropy():
     def __init__(self):
