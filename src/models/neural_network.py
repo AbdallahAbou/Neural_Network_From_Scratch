@@ -3,7 +3,7 @@ from src.activations.relu import Activation_ReLU
 from src.activations.softmax import Activation_Softmax
 from src.losses.softmax_categorical_crossentropy import Activation_Softmax_Loss_CategoricalCrossentropy
 from src.losses.categorical_crossentropy import Loss_CategoricalCrossentropy
-from src.utils.accuracy import Accuracy
+from src.metrics.accuracy import Accuracy
 
 import matplotlib as plt
 
@@ -29,7 +29,7 @@ class NeuralNetwork:
         loss = self.loss_activation.forward(self.dense4.output, y)
         return loss
 
-    def backward(self, X, y):
+    def backward(self, y):
         self.loss_activation.backward(self.loss_activation.output, y)
         self.dense4.backward(self.loss_activation.dinputs)
         self.activation3.backward(self.dense4.dinputs)
