@@ -38,6 +38,7 @@ This project is an implementation of a neural network from scratch using NumPy, 
 │   │   └── softmax.py
 │   ├── losses/
 │   │   ├── __init__.py
+│   │   ├── loss.py
 │   │   ├── categorical_crossentropy.py
 │   │   ├── softmax_categorical_crossentropy.py
 │   │   └── mean_squared_error.py
